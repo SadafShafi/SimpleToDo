@@ -1,5 +1,8 @@
 {
   "name": "Simple-Todo",
-  "integrations": {},
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
   "type": "angular"
 }
