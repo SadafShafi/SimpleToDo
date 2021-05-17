@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ToDoServiceService } from '../to-do-service.service';
+// import { ToDoServiceService } from '../to-do-service.service';
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -8,7 +8,7 @@ import { ToDoServiceService } from '../to-do-service.service';
 export class HomePage {
   newTask:string;
   tasks = [];
-  myService = new ToDoServiceService()
+  // myService = new ToDoServiceService()
   tooo = []
 
 
@@ -31,7 +31,7 @@ export class HomePage {
       this.newTask = "";
 
       //service save
-      this.myService.saveTodos(this.tasks);
+      // this.myService.saveTodos(this.tasks);
       this.showTasks()
     }
   }
@@ -41,7 +41,7 @@ export class HomePage {
 
   showTasks(){
     // service Get
-    this.tooo = this.myService.getTodos();
+    // this.tooo = this.myService.getTodos();
 
     return this.tooo
   }
@@ -51,7 +51,7 @@ export class HomePage {
   TaskClicked(todo){
    // save the status of the clicked task
     // console.log(todo)
-    this.myService.saveTodos(todo);
+    // this.myService.saveTodos(todo);
   }
 
 
@@ -72,7 +72,7 @@ export class HomePage {
       }
 
       // Service Save
-      this.myService.saveTodos(this.tooo);
+      // this.myService.saveTodos(this.tooo);
       
   }
 
